@@ -160,3 +160,9 @@
 			
 			var load = document.getElementById('select')
 			load.textContent = 'loading...';
+			load.removeAttribute('onclick');
+			
+			var pause = document.getElementById('pause');
+			pause.textcontent = "PAUSE";
+			
+			gba.loadRomFromFile
