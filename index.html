@@ -139,5 +139,24 @@
 					setTimeout(function () {
 						e2.removeAttribute('class');
 					}, 0);
-					
+				}
+			}
 			
+			e.addEventListener('webkitTransitionEnd', removeSelf, false);
+			e.addEventListener('oTransitionEnd', removeSelf, false);
+			e.addEventListener('transitionEnd', removeSelf, false);
+			e.setAttribute('class', 'hideen');
+		}
+		
+		/**
+		*starts the emulator with the given rom file
+		*
+		* @paran file
+		*/
+		function run(file) {
+			var dead = document.getElementById('loader');
+			
+			dead.value = '';
+			
+			var load = document.getElementById('select')
+			load.textContent = 'loading...';
