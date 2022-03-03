@@ -3,17 +3,17 @@ function GameBoyAdvanceVideo() {
 
 	this.CYCLES_PER_PIXEL = 4;
 
-	this.HORIZONTAL_PIXELS = 240;
-	this.HBLANK_PIXELS = 68;
-	this.HDRAW_LENGTH = 1006;
-	this.HBLANK_LENGTH = 226;
+	this.HORIZONTAL_PIXELS = 480;
+	this.HBLANK_PIXELS = 136;
+	this.HDRAW_LENGTH = 2012;
+	this.HBLANK_LENGTH = 452;
 	this.HORIZONTAL_LENGTH = 2464;
 
-	this.VERTICAL_PIXELS = 160;
-	this.VBLANK_PIXELS = 68;
+	this.VERTICAL_PIXELS = 320;
+	this.VBLANK_PIXELS = 136;
 	this.VERTICAL_TOTAL_PIXELS = 456;
 
-	this.TOTAL_LENGTH = 280896;
+	this.TOTAL_LENGTH = 561792;
 
 	this.drawCallback = function() {};
 	this.vblankCallback = function() {};
